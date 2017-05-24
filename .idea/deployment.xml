@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" promptOnRemoteOverwrite="CHECK_CONTENT" serverName="garimore">
+  <component name="PublishConfigData" autoUpload="Always" promptOnRemoteOverwrite="CHECK_CONTENT" serverName="garimore" uploadOnCheckin="d10cb840-9fa2-474a-bc59-d28fb4447e96">
     <serverData>
       <paths name="garimore">
         <serverdata>
@@ -10,6 +10,7 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="garimore" />
     <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>
