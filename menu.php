@@ -20,13 +20,16 @@
                 <div class="navbar-collapse collapse clearfix">
                     <ul class="navigation clearfix">
                         <li class="current"><a href="index.php">Inicio</a></li>
-                        <li><a href="about-us.html">Quem somos</a></li>
-                        <li><a href="take-tour.html">Visita guiada</a></li>
+                        <li><a href="index.php?pagina=sobre">Quem somos</a></li>
 
-                        <li class="dropdown"><a href="#">Galeria</a>
+                        <li><a href="index.php?pagina=faq">FAQ's</a></li>
+                        <li class="dropdown"><a href="#">Propriedade</a>
                             <ul>
-                                <li><a href="gallery-default.html">Gallery Default</a></li>
-                                <li><a href="gallery-fullwidth.html">Gallery Fullwidth</a></li>
+                                <li><a href="index.php?pagina=visita">Visita guiada</a></li>
+                                <li><a href="index.php?pagina=galeria">Galeria</a></li>
+                                <li><a href="index.php?pagina=propertyTips">Características</a></li>
+                                <li><a href="index.php?pagina=detalhes">Detalhes</a></li>
+                                <li><a href="index.php?pagina=localizacao">Localização</a></li>
                             </ul>
                         </li>
                        <!-- <li class="dropdown"><a href="#">Blog</a>
@@ -36,7 +39,7 @@
                                 <li><a href="blog-single.html">Blog Single</a></li>
                             </ul>
                         </li>-->
-                        <li><a href="contact.html">Contacte-nos</a></li>
+                        <li><a href="index.php?pagina=agentContact">Contacte-nos</a></li>
                     </ul>
                 </div>
             </nav><!-- Main Menu End-->
