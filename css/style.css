@@ -37,7 +37,7 @@
 33. Sidebar
 34. Comments Area
 35. Comments Form
-
+36. Pano View
 
 **********************************************/
 
@@ -4631,4 +4631,44 @@ blockquote.style-one{
 	color:#ffffff;
 	background:#ff573b;
 	border-color:#ff573b;	
+}
+
+
+/***
+
+====================================================================
+	Pano view
+====================================================================
+
+***/
+
+.pano {
+	width: 95%;
+	height: 30em;
+	margin: 0 auto;
+	cursor: move;
+}
+.pano .controls {
+	position: relative;
+	top: 40%;
+}
+.pano .controls span {
+	position: absolute;
+	display: inline-block;
+	text-decoration: none;
+	color: #eee;
+	font-size: 3em;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+.pano .controls span.left {
+	left: 10px;
+}
+.pano .controls span.right {
+	right: 10px;
+}
+.pano.moving .controls span {
+	opacity: 0.4;
+	color: #eee;
 }

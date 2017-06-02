@@ -1,3 +1,4 @@
+<?php if (isset($_GET['pagina'])){ ?>
 <!--Page Title-->
 <section class="page-title" style="background-image:url(images/background/bg-page-title.jpg);">
     <div class="auto-container">
@@ -14,7 +15,7 @@
     </div>
 </div>
 
-
+<?php } ?>
 
 
 <!--Property Dimensions-->

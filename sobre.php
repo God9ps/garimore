@@ -1,3 +1,4 @@
+<?php if (isset($_GET['pagina'])){ ?>
 <!--Page Title-->
 <section class="page-title" style="background-image:url(images/background/bg-page-title.jpg);">
     <div class="auto-container">
@@ -13,7 +14,7 @@
         <div class="bread-crumb text-center"><a href="index.php">Inicio</a> / <a href="#" class="current">Sobre nós</a></div>
     </div>
 </div>
-
+<?php } ?>
 
 <!--About Company-->
 <section class="about-company no-bg">

@@ -310,10 +310,8 @@ include_once "header.php";
                                     <ul class=" text-center">
                                         <li><a href="index.php?pagina=sobre">Quem Somos</a></li>
                                         <li><a href="index.php?pagina=faq">FAQ</a></li>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Privacy policy</a></li>
-                                        <li><a href="#">Support</a></li>
-                                        <li><a href="#">Contact Us</a></li>
+
+                                        <li><a href="index.php?pagina=agentContact">Contacte-nos</a></li>
                                     </ul>
         
 
@@ -371,7 +369,7 @@ include_once "header.php";
 <div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="icon flaticon-building"></span></div>
 
 
-<script src="js/jquery.js"></script> 
+<script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/revolution.min.js"></script>
 <script src="js/jquery.fancybox.pack.js"></script>
@@ -385,6 +383,7 @@ include_once "header.php";
 <script src="http://maps.google.com/maps/api/js?v=3"></script>
 <script src="js/jquery.gmap.js"></script>
 <script src="js/map-script.js"></script>
+<script src="js/panoramaView/jquery.pano.js"></script>
 <!--Locations Map End-->
 <script src="js/wow.js"></script>
 <script src="js/script.js"></script>

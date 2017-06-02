@@ -130,9 +130,6 @@
 
         </div>
 
-
-        
-
         <div class="double-separator"></div>
 
         <!--Default Two COlumn-->

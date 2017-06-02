@@ -1,7 +1,13 @@
 (function($) {
 	
 	"use strict";
-	
+
+	function choosePano(img) {
+		var src = "../images/";
+        $("#myPano").pano({
+            img: src+img
+        });
+    }
 	
 	//Hide Loading Box (Preloader)
 	function handlePreloader() {
@@ -458,8 +464,20 @@
 	$(window).on('load', function() {
 		handlePreloader();
 		enableMasonry();
+
+        $("#myPano").pano({
+            img: "../images/sphere.jpg"
+        });
+
+		$(".choose").on("click", function () {
+            choosePano($(this).attr('image'));
+        });
 	});
 
 	
 
 })(window.jQuery);
+
+$(document).ready(function($){
+
+});

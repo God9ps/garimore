@@ -27,6 +27,7 @@
                             <ul>
                                 <li><a href="index.php?pagina=visita">Visita guiada</a></li>
                                 <li><a href="index.php?pagina=galeria">Galeria</a></li>
+                                <li><a href="index.php?pagina=galeria3d">Galeria <b>3d</b></a></li>
                                 <li><a href="index.php?pagina=propertyTips">Características</a></li>
                                 <li><a href="index.php?pagina=detalhes">Detalhes</a></li>
                                 <li><a href="index.php?pagina=localizacao">Localização</a></li>

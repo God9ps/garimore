@@ -1,5 +1,5 @@
 
-<?php if (isset($_GET['pagina'])){{  ?>
+<?php if (isset($_GET['pagina'])){ ?>
 
 <!--Page Title-->
 <section class="page-title" style="background-image:url(images/background/bg-page-title.jpg);">
