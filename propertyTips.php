@@ -55,10 +55,10 @@
                     <div class="text"><div class="title">Cozinha</div><div class="count">1</div></div>
                 </div>
                 <!--Info BLock-->
-                <div class="info-block col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                <!--<div class="info-block col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="icon-box"><span class="icon flaticon-sport-car"></span></div>
                     <div class="text"><div class="title">Lugares de estacionamento</div><div class="count">0</div></div>
-                </div>
+                </div>-->
             </div>
         </div>
 

@@ -43,7 +43,7 @@
                     <li class="filter" data-role="button" data-filter=".basement">Corredor</li>
                     <li class="filter" data-role="button" data-filter=".basement">Arrecadação</li>
                     <li class="filter" data-role="button" data-filter=".basement">Exterior</li>
-                    <li class="filter" data-role="button" data-filter=".basement">Vistas</li>
+
                 </ul>
             </div>
 

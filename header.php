@@ -16,6 +16,8 @@
     <link href="css/masterslider/skins/black-2/style.css" rel="stylesheet" type="text/css">
     <!-- MasterSlider Template Style -->
     <link href="css/masterslider/style/ms-gallery-style.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
 </head>
 
 <body>

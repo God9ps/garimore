@@ -63,17 +63,17 @@
                 </div>
                 <!--Default Form-->
                 <div class="default-form">
-                    <form method="post" action="contact.html">
+                    <form id="sendmail">
                         <div class="form-group">
-                            <input type="text" name="fullname" value="" placeholder="Full Name" required="">
+                            <input type="text" name="nome" value="" placeholder="Nome" required="">
                         </div>
                         <div class="form-group">
-                            <input type="email" name="email" value="" placeholder="Email Address" required="">
+                            <input type="email" name="email" value="" placeholder="Email" required="">
                         </div>
                         <div class="form-group">
-                            <textarea name="message" placeholder="Message" required=""></textarea>
+                            <textarea name="mensagem" placeholder="Mensagem" required=""></textarea>
                         </div>
-                        <div class="text-left"><button type="submit" class="theme-btn">SEND</button></div>
+                        <div class="text-left"><button type="submit" class="theme-btn">ENVIAR</button></div>
 
                     </form>
                 </div>
