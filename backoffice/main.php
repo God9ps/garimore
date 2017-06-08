@@ -1,7 +1,5 @@
 
 
-<!-- main content -->
-<section class="content home">
     <div class="container-fluid">
         <div class="block-header">
             <h2>Dashboard</h2>
@@ -529,5 +527,3 @@
             </div>
         </div>
     </div>
-</section>
-<!-- main content -->

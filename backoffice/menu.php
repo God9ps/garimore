@@ -21,10 +21,11 @@
         <div class="menu">
             <ul class="list">
                 <li class="header">MAIN NAVIGATION</li>
-                <li class="active open"><a href="index-1.htm"><i class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
-                <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-email"></i><span>Mail Box</span> </a>
+                <li class="active open"><a onclick="loadPage('main')"><i class="zmdi zmdi-home"></i><span>Registar Cliente</span></a></li>
+                <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-accounts"></i><span>Clientes</span> </a>
                     <ul class="ml-menu">
-                        <li> <a href="mail-inbox.htm">Inbox</a></li>
+
+                        <li><a onclick="loadPage('addClient')">Registar Cliente</a></li>
                     </ul>
                 </li>
                 <li><a href="events.htm"><i class="zmdi zmdi-calendar-check"></i><span>Events</span> </a></li>
