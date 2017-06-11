@@ -15,16 +15,16 @@ if (!isset($_SESSION['login']) || $_SESSION['login'] != 1){
     <?php
     include_once "search.php";
     include_once "topBar.php";
-    include_once "menu.php";
+    include "menu.php";
 ?>
 
 <!-- main content -->
 <section class="content home" id="mainContainer">
 <?php
-    if (!isset($_GET['pagina']) || $_GET['pagina'] == ''){
+    if (!isset($_REQUEST['pagina']) || $_REQUEST['pagina'] == ''){
         include_once "main.php";
     }else{
-        include_once $_GET['pagina'].".php";
+        include_once $_REQUEST['pagina'].".php";
     }
 ?>
 </section>

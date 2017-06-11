@@ -8,6 +8,17 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon"><!-- Favicon-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
     <link href="assets/plugins/morrisjs/morris.css" rel="stylesheet">
+    <!-- FORM PLUGINS -->
+    <link href="assets/multi/bootstrap-select.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap Spinner Css -->
+    <link href="assets/plugins/jquery-spinner/css/bootstrap-spinner.css" rel="stylesheet">
+    <!-- Bootstrap Tagsinput Css -->
+    <link href="assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+    <!-- noUISlider Css -->
+    <link href="assets/plugins/nouislider/nouislider.min.css" rel="stylesheet">
+
+
     <!-- Custom Css -->
     <link href="assets/css/main.css" rel="stylesheet">
     <!-- Swift Themes. You can choose a theme from css/themes instead of get all themes -->

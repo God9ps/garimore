@@ -20,12 +20,13 @@
         <!-- Menu -->
         <div class="menu">
             <ul class="list">
-                <li class="header">MAIN NAVIGATION</li>
-                <li class="active open"><a onclick="loadPage('main')"><i class="zmdi zmdi-home"></i><span>Registar Cliente</span></a></li>
+                <li class="header">NAVEGAÇÃO</li>
+                <li class="active open"><a href="index.php?pagina=main"><i class="zmdi zmdi-home"></i><span>Página Inicial</span></a></li>
+                <li><a href="index.php?pagina=addClient"><i class="fa fa-user"></i><span>Registar Cliente</span></a></li>
+
                 <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-accounts"></i><span>Clientes</span> </a>
                     <ul class="ml-menu">
-
-                        <li><a onclick="loadPage('addClient')">Registar Cliente</a></li>
+                        <li><a href="index.php?pagina=addClient">Registar Cliente</a></li>
                     </ul>
                 </li>
                 <li><a href="events.htm"><i class="zmdi zmdi-calendar-check"></i><span>Events</span> </a></li>
