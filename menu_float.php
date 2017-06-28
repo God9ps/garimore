@@ -21,18 +21,18 @@
 
                 <div class="navbar-collapse collapse clearfix">
                     <ul class="navigation clearfix">
-                        <li class="current"><a href="index.php">Inicio</a></li>
-                        <li><a href="index.php?pagina=sobre">Quem somos</a></li>
+                        <li class="current"><a href="pagina-inicial">Inicio</a></li>
+                        <li><a href="quem-somos">Quem somos</a></li>
 
-                        <li><a href="index.php?pagina=faq">FAQ's</a></li>
+                        <li><a href="perguntas-frequentes">FAQ's</a></li>
                         <li class="dropdown"><a href="#">Propriedade</a>
                             <ul>
-                                <li><a href="index.php?pagina=visita">Visita guiada</a></li>
-                                <li><a href="index.php?pagina=galeria">Galeria</a></li>
-                                <li><a href="index.php?pagina=galeria3d">Galeria <b>3d</b></a></li>
-                                <li><a href="index.php?pagina=propertyTips">Características</a></li>
-                                <li><a href="index.php?pagina=detalhes">Detalhes</a></li>
-                                <li><a href="index.php?pagina=localizacao">Localização</a></li>
+                                <li><a href="visita-virtual">Visita guiada</a></li>
+                                <li><a href="galeria">Galeria</a></li>
+                                <li><a href="visita-guiada-ao-imovel">Galeria <b>3d</b></a></li>
+                                <li><a href="caracteristicas-do-imovel">Características</a></li>
+                                <li><a href="detalhes">Detalhes</a></li>
+                                <li><a href="localizacao">Localização</a></li>
                             </ul>
                         </li>
                         <!-- <li class="dropdown"><a href="#">Blog</a>
@@ -42,7 +42,7 @@
                                  <li><a href="blog-single.html">Blog Single</a></li>
                              </ul>
                          </li>-->
-                        <li><a href="index.php?pagina=agentContact">Contacte-nos</a></li>
+                        <li><a href="contacto">Contacte-nos</a></li>
                     </ul>
                 </div>
             </nav><!-- Main Menu End-->

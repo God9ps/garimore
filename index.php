@@ -17,17 +17,17 @@
 <body>
 <div class="container">
     <div class="row">
-        <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-            <img src="images/garimore.png" class="img-responsive">
+        <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12" style="margin-top: 50px">
+            <img src="images/garimore.png" alt="logo" class="img-responsive center-block">
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+        <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12" style="margin-top: 50px;">
             <h1 class="text-uppercase text-center">BREVEMENTE DISPONIVEL</h1>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+        <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12" style="margin-top: 50px;">
             <h4 class="text-center"><span class="fa fa-envelope"> E-mail: </span> geral@garimore.pt</h4>
         </div>
     </div>
@@ -38,7 +38,7 @@
     </div>
 </div>
 
-<footer class="main-footer" style="background-image:url(images/background/bg-page-title.jpg);">
+<footer class="main-footer" style="width:100%;position:fixed;bottom: 0px;background-image:url(images/background/bg-page-title.jpg);">
 
     <!--Footer Upper-->
     <div class="footer-upper">
@@ -67,7 +67,7 @@
 
     </div>
 
-    </div>
+
 
 
     <!--Footer Bottom-->

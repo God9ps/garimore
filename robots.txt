@@ -1,0 +1,19 @@
+#Begin Attracta SEO Tools Sitemap. Do not remove
+sitemap: http://cdn.attracta.com/sitemap/5190975.xml.gz
+#End Attracta SEO Tools Sitemap. Do not remove
+Sitemap: https://garimore/sitemap.xml
+
+User-agent: *
+
+# Directories
+Disallow: /backoffice/
+Disallow: /classes/
+Disallow: /css/
+Disallow: /dashboard/
+Disallow: /fonts/
+Disallow: /images/
+Disallow: /js/
+# Files
+Allow: /index.php?pagina=*
+
+Disallow: /trata.php

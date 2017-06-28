@@ -18,7 +18,6 @@
 
 <script src="../js/sign-in.js"></script>
 <script src="assets/js/menu.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6x_tGhuiObfyVTdNNh8wpTt3BHRJqJeY"></script>
-<script src="assets/js/places.min.js"></script>
+
 </body>
 </html>

@@ -160,7 +160,7 @@
                                                 <label class="form-label">Morada</label>
                                             </div>
                                             <div id="map" style="width: 100%; height: 380px;"></div>
-
+                                            <input type="hidden" name="geo"/>
                                         </div>
                                     </div>
                                 </div>
@@ -171,12 +171,14 @@
             </div>
         </div>
     </div>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
     <!-- #END# Advanced Form Example With Validation -->
 
     <!--<script src="assets/bundles/libscripts.bundle.js"></script>--> <!-- Lib Scripts Plugin Js -->
     <!--<script src="assets/bundles/vendorscripts.bundle.js"></script>--> <!-- Lib Scripts Plugin Js -->
-    <script src="/js/jquery.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+
 
     <script src="assets/plugins/nouislider/nouislider.js"></script> <!-- noUISlider Plugin Js -->
 

@@ -1,193 +1,171 @@
-function initialize(){
+function fixCoord(coord) {
 
-    var myLatlng = new google.maps.LatLng(38.712530,-9.140626);
-    var mapOptions = {
-        zoom: 18,
-        center: myLatlng,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    var map;
-    map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    var matches, strMin;
+    matches = coord.toString().split('.');
 
-    var marker;
+    var deg = matches[0];
+    var min = matches[1];
 
-    /*var geocoder = new google.maps.Geocoder();
-    var infowindow = new google.maps.InfoWindow();
-    var autoCompleteInput = document.getElementById('endereco');
-    var autoCompleteOpcoes = {types: ['geocode']};
-    autocomplete = new google.maps.places.Autocomplete(autoCompleteInput,autoCompleteOpcoes);
+    var sign = parseInt(deg) < 0 ? "-" : "";
 
-    google.maps.event.addListener(autocomplete, 'place_changed', function() {
-        var place = autocomplete.getPlace();
-        for (var i = 0; i < place.address_components.length; i++) {
-            for (var j = 0; j < place.address_components[i].types.length; j++) {
-                if (place.address_components[i].types[j] == "postal_code") {
-                    console.log( place.address_components[i]);
+    deg = Math.abs(deg);
 
+    if (isNaN(deg) || isNaN(min)) {
+        return NaN;
+    }
+
+    if (deg < 10) {
+        deg = "0" + deg;
+    }
+
+    if (min.toString().length < 6) {
+        strMin = min.toString() + "000000";
+        strMin = strMin.substring(0, 6);
+    } else {
+        strMin = min.toString().substring(0, 6);
+    }
+    return sign + deg + "." + strMin;
+}
+
+function getJson(lat, long) {
+    latGlobal = fixCoord(lat);
+    longGlobal = fixCoord(long);
+    $.ajax({
+        url: 'http://nominatim.openstreetmap.org/reverse?format=json&lat=' + lat + '&lon=' + long + '&addressdetails=1',
+        dataType: 'json',
+        success: function (data) {
+            //console.log(data);
+            if (data['error']){
+                var lat = 38.711877;
+                var long = -08.140721;
+                map.panTo(new L.LatLng(lat, long));
+                marker.setLatLng([lat, long]).update();
+                swal(
+                    'Oops...',
+                    'Morada ou coordenadas inválidas!',
+                    'error'
+                );
+
+                $("#address").val('');
+
+            }else{
+                if (data['address']){
+                    $("#address").val(data['address']['road']);
+                    map.panTo(new L.LatLng(lat, long));
+                    marker.setLatLng([lat, long]).update();
+                }else{
+                    swal(
+                        'Oops...',
+                        'Morada ou coordenadas inválidas!',
+                        'error'
+                    );
                 }
+
             }
+
         }
-
-        for (var i=0; i<results[j].address_components.length; i++)
-        {
-            if (results[j].address_components[i].types[0] == "locality") {
-                //this is the object you are looking for
-                city = results[j].address_components[i];
-            }
-            if (results[j].address_components[i].types[0] == "administrative_area_level_1") {
-                //this is the object you are looking for
-                region = results[j].address_components[i];
-            }
-            if (results[j].address_components[i].types[0] == "country") {
-                //this is the object you are looking for
-                country = results[j].address_components[i];
-            }
-        }
+    });
+}
 
 
-        var cp = zip[0];
-        var codPostal = new Array();
-        var codPostal = cp.split("-");
-        console.log(region.long_name);
-        // console.log(results[0].address_components[3]['long_name']);
-        $('#CP4').val(codPostal[0]);
-        $('#CP3').val(codPostal[1]);
-        // $('#CPDesignacao').val(localidade);
-        $('#CPDesignacao').val(city.long_name);
-        $('#latitude').val(marker.getPosition().lat());
-        $('#longitude').val(marker.getPosition().lng());
-        infowindow.setContent(results[0].formatted_address);
-        infowindow.open(map, marker);
 
-        var myLatlng = new google.maps.LatLng(marker.getPosition().lat(),marker.getPosition().lng());
+function vermapa(lat, long) {
 
-        marker = new google.maps.Marker({
-            map: map,
-            position: myLatlng,
-            draggable: true
-        });
+    morada = null;
 
-    });*/
+    icon = L.icon({
 
+        iconUrl: 'assets/leaflet/marker-icon-blue.png',
+        shadowUrl: 'assets/leaflet/marker-shadow.png',
 
-    marker = new google.maps.Marker({
-        map: map,
-        position: myLatlng,
-        draggable: true
+        iconSize: [28, 45], // size of the icon
+        shadowSize: [50, 64], // size of the shadow
+        iconAnchor: [12, 54], // point of the icon which will correspond to marker's location
+        shadowAnchor: [10, 72],  // the same for the shadow
+        popupAnchor: [2, -56] // point from which the popup should open relative to the iconAnchor
     });
 
-    /*geocoder.geocode({'latLng': myLatlng }, function(results, status) {
-        if (status == google.maps.GeocoderStatus.OK) {
-            if (results[0]) {
+    var autocomplete_map = new autoComplete({
+        selector: '#address',
+        minChars: 3,
 
-                //                  $('#endereco').val(results[0].formatted_address); // Mostra a morada completa rua/nº/codPostal/localidade/pais
-                $('#endereco').val(results[0].address_components[1]['long_name']+' nº '+results[0].address_components[0]['long_name']); //Rua
-                var x = 0;
-                var zip = new Array();
-                for (var i = 0; i < results[0].address_components.length; i++) {
-                    for (var j = 0; j < results[0].address_components[i].types.length; j++) {
-                        if (results[0].address_components[i].types[j] == "postal_code") {
-                            zip[x] = results[0].address_components[i]['long_name'];
+        source: function(term, response) {
+            fetch('http://nominatim.openstreetmap.org/search?format=json&addressdetails=3&limit=10&q=' + term)
+                .then(function(response) {
 
-                            x++;
-                        }
+                    return response.text();
+                }).then(function(body) {
 
+                var json = JSON.parse(body);
+                var new_json = json.map(function(el) {
+                    return {
+                        label: el.display_name,
+                        value: el.display_name,
+                        lat: el.lat,
+                        lon: el.lon,
+                        boundingbox: el.boundingbox
                     }
+                });
+                response(new_json);
+            });
+        },
+        renderItem: function(item, search) {
+            search = search.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+            var re = new RegExp("(" + search.split(' ').join('|') + ")", "gi");
+            var bbox = [item.boundingbox[2], item.boundingbox[0], item.boundingbox[3], item.boundingbox[1]];
+            return '<div class="autocomplete-suggestion" data-bbox="' + bbox.join(',') + '" data-lon="' + item.lon + '" data-lat="' + item.lat + '" data-val="' + item.label + '">' + item.label.replace(re, "<b>$1</b>") + '</div>';
+        },
+        onSelect: function(e, term, item) {
+            if (item.getAttribute('data-bbox') && (item.getAttribute('data-bbox').split(',')).length > 0) {
+                var extent = item.getAttribute('data-bbox').split(',');
+                if (extent.length > 0) {
+                    extent = extent.map(function(el) {
+                        return parseFloat(el);
+                    });
                 }
+                getJson(item.getAttribute('data-lat'), item.getAttribute('data-lon'));
+                map.panTo(new L.LatLng(item.getAttribute('data-lat'),item.getAttribute('data-lon')));
+                marker.setLatLng([item.getAttribute('data-lat'),item.getAttribute('data-lon')]).update();
 
-                for (var i=0; i<results[j].address_components.length; i++)
-                {
-                    if (results[j].address_components[i].types[0] == "locality") {
-                        //this is the object you are looking for
-                        city = results[j].address_components[i];
-                    }
-                    if (results[j].address_components[i].types[0] == "administrative_area_level_1") {
-                        //this is the object you are looking for
-                        region = results[j].address_components[i];
-                    }
-                    if (results[j].address_components[i].types[0] == "country") {
-                        //this is the object you are looking for
-                        country = results[j].address_components[i];
-                    }
-                }
-
-
-                var cp = zip[0];
-                var codPostal = new Array();
-                var codPostal = cp.split("-");
-                console.log(region.long_name);
-                // console.log(results[0].address_components[3]['long_name']);
-                $('#CP4').val(codPostal[0]);
-                $('#CP3').val(codPostal[1]);
-                // $('#CPDesignacao').val(localidade);
-                $('#CPDesignacao').val(city.long_name);
-                $('#latitude').val(marker.getPosition().lat());
-                $('#longitude').val(marker.getPosition().lng());
-                infowindow.setContent(results[0].formatted_address);
-                infowindow.open(map, marker);
+            } else {
+                var lat = item.getAttribute('data-lat');
+                var long = item.getAttribute('data-lon');
+                map.panTo(new L.LatLng(lat,long));
+                marker.setLatLng([lat,long]).update();
+                getJson(lat, long);
             }
         }
-    });*/
+    });
 
-    /*google.maps.event.addListener(marker, 'dragend', function() {
+    getJson(lat, long);
 
-        geocoder.geocode({'latLng': marker.getPosition()}, function(results, status) {
-            if (status == google.maps.GeocoderStatus.OK) {
-                if (results[0]) {
+    marker = L.marker([lat, long], {icon: icon, draggable: true}).addTo(map);
 
-                    //                  $('#endereco').val(results[0].formatted_address); // Mostra a morada completa rua/nº/codPostal/localidade/pais
-                    $('#endereco').val(results[0].address_components[1]['long_name']+' nº '+results[0].address_components[0]['long_name']); //Rua
-                    var x = 0;
-                    var zip = new Array();
-                    for (var i = 0; i < results[0].address_components.length; i++) {
-                        for (var j = 0; j < results[0].address_components[i].types.length; j++) {
-                            if (results[0].address_components[i].types[j] == "postal_code") {
-                                zip[x] = results[0].address_components[i]['long_name'];
+    marker.on('dragend', function (e) {
+        console.log(e['target']);
+        var lat = e['target']['_latlng']['lat'];
 
-                                x++;
-                            }
-                        }
-                    }
+        var long = e['target']['_latlng']['lng'];
 
-                    for (var i=0; i<results[j].address_components.length; i++)
-                    {
-                        if (results[j].address_components[i].types[0] == "locality") {
-                            //this is the object you are looking for
-                            city = results[j].address_components[i];
-                        }
-                        if (results[j].address_components[i].types[0] == "administrative_area_level_1") {
-                            //this is the object you are looking for
-                            region = results[j].address_components[i];
-                        }
-                        if (results[j].address_components[i].types[0] == "country") {
-                            //this is the object you are looking for
-                            country = results[j].address_components[i];
-                        }
-                    }
+        $("input[name='geo']").val("POINT(" + lat + " " + long + ")");
+        getJson(lat, long);
 
+    });
 
-                    var cp = zip[0];
-                    var codPostal = new Array();
-                    var codPostal = cp.split("-");
-                    console.log(region.long_name);
-                    // console.log(results[0].address_components[3]['long_name']);
-                    $('#CP4').val(codPostal[0]);
-                    $('#CP3').val(codPostal[1]);
-                    // $('#CPDesignacao').val(localidade);
-                    $('#CPDesignacao').val(city.long_name);
-                    $('#latitude').val(marker.getPosition().lat());
-                    $('#longitude').val(marker.getPosition().lng());
-                    infowindow.setContent(results[0].formatted_address);
-                    infowindow.open(map, marker);
-                }
-            }
-        });
-    });*/
 }
+
 $(document).ready(function () {
-    setTimeout(function () {
-        initialize();
-    } ,1500);
+    var lat = 38.711877;
+    var long = -08.140721;
+
+    blue = '../../mapa/marker-icon-blue.png';
+    shadow = '../../mapa/marker-shadow.png';
+
+    map = L.map('map').setView([lat, long], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+    vermapa(lat, long);
 
     /*$('#listingTypes').selectpicker({
         style: 'btn-info',

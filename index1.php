@@ -348,7 +348,7 @@ include_once "header.php";
                     
                 </div>
                 
-            </div>
+
 
         
         <!--Footer Bottom-->

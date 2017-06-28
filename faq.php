@@ -1,4 +1,4 @@
-
+<?php include_once("analyticstracking.php") ?>
 <?php if (isset($_GET['pagina'])){ ?>
 
 <!--Page Title-->

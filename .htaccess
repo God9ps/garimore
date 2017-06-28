@@ -1,0 +1,19 @@
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    RewriteRule ^pagina-inicial$ index1.php [QSA,L,NC]
+    RewriteRule ^quem-somos$ index1.php?pagina=sobre [QSA,L,NC]
+    RewriteRule ^detalhes$ index1.php?pagina=detalhes [QSA,L,NC]
+    RewriteRule ^contacto$ index1.php?pagina=agentContact [QSA,L,NC]
+    RewriteRule ^descricao-detalhada-do-imovel$ index1.php?pagina=descDetalhada [QSA,L,NC]
+    RewriteRule ^perguntas-frequentes$ index1.php?pagina=faq [QSA,L,NC]
+    RewriteRule ^galeria$ index1.php?pagina=galeria [QSA,L,NC]
+    RewriteRule ^visita-virtual$ index1.php?pagina=visita [QSA,L,NC]
+    RewriteRule ^visita-guiada-ao-imovel$ index1.php?pagina=galeria3d [QSA,L,NC]
+    RewriteRule ^caracteristicas-do-imovel$ index1.php?pagina=propertyTips [QSA,L,NC]
+    RewriteRule ^localizacao$ index1.php?pagina=localizacao [QSA,L,NC]
+</IfModule

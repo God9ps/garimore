@@ -25,6 +25,23 @@
     <link href="assets/css/themes/all-themes.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/sweetalert.css">
 
+
+   <!-- <script type="text/javascript" src="assets/leaflet/maps.js"></script>-->
+
+
+    <link rel="stylesheet" href="assets/leaflet/leaflet.css" />
+
+    <link rel="stylesheet" href="assets/leaflet/auto-complete.css" />
+    <script src="assets/leaflet/auto-complete.js"></script>
+    <script src="assets/leaflet/leaflet.js"></script>
+    <!--<script src="../../../globais/places.min.js"></script>-->
+
+    <script src="assets/leaflet/esri-leaflet.js"></script>
+
+    <link rel="stylesheet" href="assets/leaflet/esri-leaflet-geocoder.css">
+
+    <script src="assets/leaflet/esri-leaflet-geocoder.js"></script>
+
 </head>
 
 <body class="theme-blue">

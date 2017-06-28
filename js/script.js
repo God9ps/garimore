@@ -483,7 +483,9 @@ $(document).ready(function($){
     $(function () {
         $.ajaxSetup({
             type: "POST",
-            url: "../trata.php",
+
+        /*"../trata.php"*/
+            url: "classes/mail.php",
             dataType: "json",
             cache: "false",
             error: function (jqXHR, exception) {

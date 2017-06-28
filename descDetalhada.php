@@ -1,3 +1,5 @@
+<?php include_once("analyticstracking.php") ?>
+
 <?php if (isset($_GET['pagina'])){ ?>
 <!--Page Title-->
 <section class="page-title" style="background-image:url(images/background/bg-page-title.jpg);">
