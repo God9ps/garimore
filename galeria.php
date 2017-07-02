@@ -37,13 +37,13 @@
                 <ul class="filter-tabs filter-btns clearfix">
                     <li class="active filter" data-role="button" data-filter=".all">Tudo</li>
                     <li class="filter" data-role="button" data-filter=".bedrooms">Quarto 1</li>
-                    <li class="filter" data-role="button" data-filter=".bathrooms">Quarto 2</li>
-                    <li class="filter" data-role="button" data-filter=".kitchen">Cozinha</li>
-                    <li class="filter" data-role="button" data-filter=".garage">Sala</li>
-                    <li class="filter" data-role="button" data-filter=".basement">Casa de Banho</li>
-                    <li class="filter" data-role="button" data-filter=".basement">Corredor</li>
-                    <li class="filter" data-role="button" data-filter=".basement">Arrecadação</li>
-                    <li class="filter" data-role="button" data-filter=".basement">Exterior</li>
+                    <li class="filter" data-role="button" data-filter=".bedrooms">Quarto 2</li>
+                    <li class="filter" data-role="button" data-filter=".cozinha">Cozinha</li>
+                    <li class="filter" data-role="button" data-filter=".sala">Sala</li>
+                    <li class="filter" data-role="button" data-filter=".casadebanho">Casa de Banho</li>
+                    <li class="filter" data-role="button" data-filter=".corredor">Corredor</li>
+                    <li class="filter" data-role="button" data-filter=".arrecadacao">Arrecadação</li>
+                    <li class="filter" data-role="button" data-filter=".predio">Exterior</li>
 
                 </ul>
             </div>
@@ -52,95 +52,158 @@
             <div class="items-container clearfix">
 
                 <!--Default Portfolio Item-->
-                <div class="default-portfolio-item masonry-item small-block all garage basement">
+                <div class="default-portfolio-item masonry-item small-block all bedrooms">
                     <div class="inner-box">
-                        <figure class="image-box"><img src="images/gallery/1.jpg" alt=""></figure>
+                        <figure class="image-box"><img src="images/gallery/barreiro/quarto1.jpg" alt=""></figure>
                         <!--Overlay Box-->
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <h3><a href="take-tour.html">BEDROOM</a></h3>
-                                    <a href="images/gallery/1.jpg" class="lightbox-image image-link" title="Image Caption Here"><span class="icon flaticon-cross"></span></a>
+<!--                                    <h3><a href="take-tour.html">Quarto 1</a></h3>-->
+                                    <h3>Quarto 1</h3>
+                                    <a href="images/gallery/barreiro/quarto1.jpg" class="lightbox-image image-link" title="Quarto"><span class="icon flaticon-cross"></span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--Default Portfolio Item-->
-                <div class="default-portfolio-item masonry-item small-block all bedrooms bathrooms kitchen garage basement">
+                <div class="default-portfolio-item masonry-item small-block all bedrooms">
                     <div class="inner-box">
-                        <figure class="image-box"><img src="images/gallery/2.jpg" alt=""></figure>
+                        <figure class="image-box"><img src="images/gallery/barreiro/quarto1_1.jpg" alt=""></figure>
                         <!--Overlay Box-->
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <h3><a href="take-tour.html">BEDROOM</a></h3>
-                                    <a href="images/gallery/2.jpg" class="lightbox-image image-link" title="Image Caption Here"><span class="icon flaticon-cross"></span></a>
+                                    <h3>Quarto 1</h3>
+                                    <a href="images/gallery/barreiro/quarto1_1.jpg" class="lightbox-image image-link" title="Quarto"><span class="icon flaticon-cross"></span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--Default Portfolio Item-->
-                <div class="default-portfolio-item masonry-item small-block all kitchen garage basement">
+                <div class="default-portfolio-item masonry-item small-block all bedrooms">
                     <div class="inner-box">
-                        <figure class="image-box"><img src="images/gallery/3.jpg" alt=""></figure>
+                        <figure class="image-box"><img src="images/gallery/barreiro/quarto2.jpg" alt=""></figure>
                         <!--Overlay Box-->
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <h3><a href="take-tour.html">BEDROOM</a></h3>
-                                    <a href="images/gallery/3.jpg" class="lightbox-image image-link" title="Image Caption Here"><span class="icon flaticon-cross"></span></a>
+                                    <h3>Quarto 1</h3>
+                                    <a href="images/gallery/barreiro/quarto2.jpg" class="lightbox-image image-link" title="Quarto"><span class="icon flaticon-cross"></span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--Default Portfolio Item-->
-                <div class="default-portfolio-item masonry-item small-block all bedrooms bathrooms kitchen">
+                <div class="default-portfolio-item masonry-item small-block all bedrooms">
                     <div class="inner-box">
-                        <figure class="image-box"><img src="images/gallery/4.jpg" alt=""></figure>
+                        <figure class="image-box"><img src="images/gallery/barreiro/quarto2_1.jpg" alt=""></figure>
                         <!--Overlay Box-->
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <h3><a href="take-tour.html">BEDROOM</a></h3>
-                                    <a href="images/gallery/4.jpg" class="lightbox-image image-link" title="Image Caption Here"><span class="icon flaticon-cross"></span></a>
+                                    <h3>Quarto 1</h3>
+                                    <a href="images/gallery/barreiro/quarto2_1.jpg" class="lightbox-image image-link" title="Quarto"><span class="icon flaticon-cross"></span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--Default Portfolio Item-->
-                <div class="default-portfolio-item masonry-item small-block all bathrooms kitchen garage">
+                <div class="default-portfolio-item masonry-item small-block all sala">
                     <div class="inner-box">
-                        <figure class="image-box"><img src="images/gallery/5.jpg" alt=""></figure>
+                        <figure class="image-box"><img src="images/gallery/barreiro/sala.jpg" alt=""></figure>
                         <!--Overlay Box-->
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <h3><a href="take-tour.html">BEDROOM</a></h3>
-                                    <a href="images/gallery/5.jpg" class="lightbox-image image-link" title="Image Caption Here"><span class="icon flaticon-cross"></span></a>
+                                    <h3>Quarto 1</h3>
+                                    <a href="images/gallery/barreiro/sala.jpg" class="lightbox-image image-link" title="Sala"><span class="icon flaticon-cross"></span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--Default Portfolio Item-->
-                <div class="default-portfolio-item masonry-item big-block all bedrooms bathrooms basement">
+                <div class="default-portfolio-item masonry-item small-block all sala">
                     <div class="inner-box">
-                        <figure class="image-box"><img src="images/gallery/6.jpg" alt=""></figure>
+                        <figure class="image-box"><img src="images/gallery/barreiro/sala_1.jpg" alt=""></figure>
                         <!--Overlay Box-->
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <h3><a href="take-tour.html">BEDROOM</a></h3>
-                                    <a href="images/gallery/6.jpg" class="lightbox-image image-link" title="Image Caption Here"><span class="icon flaticon-cross"></span></a>
+                                    <h3>Quarto 1</h3>
+                                    <a href="images/gallery/barreiro/sala_1.jpg" class="lightbox-image image-link" title="Sala"><span class="icon flaticon-cross"></span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!--Default Portfolio Item-->
+                <div class="default-portfolio-item masonry-item small-block all casadebanho">
+                    <div class="inner-box">
+                        <figure class="image-box"><img src="images/gallery/barreiro/casabanho.jpg" alt=""></figure>
+                        <!--Overlay Box-->
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <div class="content">
+                                    <h3>Quarto 1</h3>
+                                    <a href="images/gallery/barreiro/casabanho.jpg" class="lightbox-image image-link" title="Casa de Banho"><span class="icon flaticon-cross"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Default Portfolio Item-->
+                <div class="default-portfolio-item masonry-item small-block all corredor">
+                    <div class="inner-box">
+                        <figure class="image-box"><img src="images/gallery/barreiro/corredor2.jpg" alt=""></figure>
+                        <!--Overlay Box-->
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <div class="content">
+                                    <h3>Quarto 1</h3>
+                                    <a href="images/gallery/barreiro/corredor2.jpg" class="lightbox-image image-link" title="Corredor"><span class="icon flaticon-cross"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Default Portfolio Item-->
+                <div class="default-portfolio-item masonry-item small-block all corredor">
+                    <div class="inner-box">
+                        <figure class="image-box"><img src="images/gallery/barreiro/corredor.jpg" alt=""></figure>
+                        <!--Overlay Box-->
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <div class="content">
+                                    <h3>Quarto 1</h3>
+                                    <a href="images/gallery/barreiro/corredor.jpg" class="lightbox-image image-link" title="Corredor"><span class="icon flaticon-cross"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Default Portfolio Item-->
+                <div class="default-portfolio-item masonry-item small-block all cozinha">
+                    <div class="inner-box">
+                        <figure class="image-box"><img src="images/gallery/barreiro/cozinha.jpg" alt=""></figure>
+                        <!--Overlay Box-->
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <div class="content">
+                                    <h3>Quarto 1</h3>
+                                    <a href="images/gallery/barreiro/cozinha.jpg" class="lightbox-image image-link" title="Cozinha"><span class="icon flaticon-cross"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
 
             </div>
 
