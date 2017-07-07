@@ -71,7 +71,7 @@
                                         <!--Styled List-->
                                         <ul class="styled-list-one">
                                             <li><strong>Quartos :</strong> 2</li>
-                                            <li><strong>Lugares de estacionamento :</strong> 0</li>
+<!--                                            <li><strong>Lugares de estacionamento :</strong> 0</li>-->
                                             <li><strong>Arrecadações :</strong> 1</li>
                                         </ul>
                                     </div>
@@ -119,24 +119,24 @@
                             <!--Tab-->
                             <div class="tab" id="tab-three">
                                 <div class="text">
-                                    <p>As áreas das divisões do apartamento são muito boas as quais se adequam facilmente quer a solteiros, casais ou pequenas familias.</p>
+                                    <p>As áreas das divisões do apartamento são boas as quais se adequam facilmente quer a solteiros, casais ou pequenas familias.</p>
                                 </div>
 
                                 <div class="row clearfix">
                                     <div class="column col-md-4 col-sm-4 col-xs-12">
                                         <!--Styled List-->
                                         <ul class="styled-list-one">
-                                            <li><strong>Sala :</strong> 27m²</li>
-                                            <li><strong>Cozinha :</strong> 10m²</li>
-                                            <li><strong>Casa de banho :</strong> 4m²</li>
+                                            <li><strong>Sala :</strong> 17,68m²</li>
+                                            <li><strong>Cozinha :</strong> 9m²</li>
+                                            <li><strong>Casa de banho :</strong> 2,77m²</li>
                                         </ul>
                                     </div>
 
                                     <div class="column col-md-4 col-sm-4 col-xs-12">
                                         <!--Styled List-->
                                         <ul class="styled-list-one">
-                                            <li><strong>Quarto 1 :</strong> 10m²</li>
-                                            <li><strong>Quarto 2 :</strong> 13m²</li>
+                                            <li><strong>Quarto 1 :</strong> 12m²</li>
+                                            <li><strong>Quarto 2 :</strong> 8,28m²</li>
                                             <li><strong>Corredor :</strong> 6m²</li>
                                         </ul>
                                     </div>

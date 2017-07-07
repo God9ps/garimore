@@ -24,7 +24,7 @@
                             </div>
                             <div class="lower-info">
                                 <div class="data-cell price">65.000€</div>
-                                <a href="#" class="data-cell read-more">Ver Detalhes</a>
+                                <a href="detalhes" class="data-cell read-more">Ver Detalhes</a>
                             </div>
                         </div>
 
@@ -50,7 +50,7 @@
                             </div>
                             <div class="lower-info">
                                 <div class="data-cell price">65.000€</div>
-                                <a href="#" class="data-cell read-more">Ver Detalhes</a>
+                                <a href="detalhes" class="data-cell read-more">Ver Detalhes</a>
                             </div>
                         </div>
 
@@ -67,16 +67,16 @@
                         <div class="outer-box">
                             <div class="upper-content">
                                 <h2><strong>Áreas</strong></h2>
-                                <div class="text">82m2 área total</div>
+                                <div class="text">56m² área total</div>
                                 <ul class="info-list clearfix">
-                                    <li><strong>12m2</strong> Quarto</li>
-                                    <li><strong>10m2</strong> Quarto</li>
-                                    <li><strong>21m2</strong> Sala</li>
+                                    <li><strong>8,28m²</strong> Quarto</li>
+                                    <li><strong>12m²</strong> Quarto</li>
+                                    <li><strong>17,68m²</strong> Sala</li>
                                 </ul>
                             </div>
                             <div class="lower-info">
                                 <div class="data-cell price">65.000€</div>
-                                <a href="#" class="data-cell read-more">Ver Detalhes</a>
+                                <a href="detalhes" class="data-cell read-more">Ver Detalhes</a>
                             </div>
                         </div>
 
@@ -93,16 +93,16 @@
                         <div class="outer-box">
                             <div class="upper-content">
                                 <h2><strong>Áreas</strong></h2>
-                                <div class="text">82m2 área total</div>
+                                <div class="text">56m² área total</div>
                                 <ul class="info-list clearfix">
-                                    <li><strong>5m2</strong> Casa de Banho</li>
-                                    <li><strong>14m2</strong> Cozinha</li>
-                                    <li><strong>6m2</strong> Sala/Arrumo</li>
+                                    <li><strong>2,77m²</strong> Casa de Banho</li>
+                                    <li><strong>9m²</strong> Cozinha</li>
+                                    <li><strong>3,86m²</strong> Arrumo</li>
                                 </ul>
                             </div>
                             <div class="lower-info">
                                 <div class="data-cell price">65.000€</div>
-                                <a href="#" class="data-cell read-more">Ver Detalhes</a>
+                                <a href="detalhes" class="data-cell read-more">Ver Detalhes</a>
                             </div>
                         </div>
 

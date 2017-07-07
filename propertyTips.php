@@ -47,7 +47,7 @@
                 <!--Info BLock-->
                 <div class="info-block col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="icon-box"><span class="icon flaticon-buildings-1"></span></div>
-                    <div class="text"><div class="title">Área coberta</div><div class="count">98m²</div></div>
+                    <div class="text"><div class="title">Área coberta</div><div class="count">56m²</div></div>
                 </div>
                 <!--Info BLock-->
                 <div class="info-block col-lg-2 col-md-3 col-sm-4 col-xs-6">

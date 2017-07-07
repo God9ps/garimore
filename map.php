@@ -12,7 +12,7 @@
     <!--Breadcrumb-->
     <div class="breadcrumb-outer">
         <div class="auto-container">
-            <div class="bread-crumb text-center"><a href="index.php">Inicio</a> / <a href="#" class="current">Mapa</a></div>
+            <div class="bread-crumb text-center"><a href="pagina-inicial">Inicio</a> / <a href="#" class="current">Mapa</a></div>
         </div>
     </div>
 <?php } ?>
@@ -23,7 +23,7 @@
     <!--Map Container-->
     <div class="map-outer">
         <!--Map Canvas-->
-        <div class="map-canvas" data-zoom="12" data-lat="23.814233" data-lng="90.410397" data-type="roadmap" data-hue="#ffc400" data-title="Dhaka" data-content="Dhaka, Bangladesh<br><a href='mailto:info@youremail.com'>info@youremail.com</a>">
+        <div class="map-canvas" data-zoom="12" data-lat="38.6426873" data-lng="-9.053962" data-type="roadmap" data-hue="#ffc400" data-title="Barreiro" data-content="Barreiro, Setubal<br><a href='contacto'>Garimore</a>">
         </div>
 
         <!--Info Outer-->

@@ -28,7 +28,7 @@
                 <div class="master-slider ms-skin-black-2 round-skin" id="masterslider">
 
                     <div class="ms-slide">
-                        <img src="css/masterslider/style/blank.gif" data-src="images/gallery/15.jpg" alt="lorem ipsum dolor sit">
+                        <img src="css/masterslider/style/blank.gif" data-src="images/gallery/barreiro/" alt="lorem ipsum dolor sit">
                         <img src="images/gallery/thumb-1.jpg" alt="thumb-1" class="ms-thumb">
                         <div class="ms-info">Big Bedroom With Great Space</div>
                     </div>

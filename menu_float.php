@@ -27,9 +27,9 @@
                         <li><a href="perguntas-frequentes">FAQ's</a></li>
                         <li class="dropdown"><a href="#">Propriedade</a>
                             <ul>
-                                <li><a href="visita-virtual">Visita guiada</a></li>
-                                <li><a href="galeria">Galeria</a></li>
-                                <li><a href="visita-guiada-ao-imovel">Galeria <b>3d</b></a></li>
+<!--                                <li><a href="visita-virtual">Visita guiada</a></li>-->
+                                <!--<li><a href="galeria">Galeria</a></li>
+                                <li><a href="visita-guiada-ao-imovel">Galeria <b>3d</b></a></li>-->
                                 <li><a href="caracteristicas-do-imovel">Características</a></li>
                                 <li><a href="detalhes">Detalhes</a></li>
                                 <li><a href="localizacao">Localização</a></li>
